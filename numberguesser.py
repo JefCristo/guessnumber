@@ -4,7 +4,7 @@ import random
 import os
 
 
-TOKEN = '6621281346:AAF-YjiAdw8XGDusYL3pO1Dj8q0k8bTJ9pA'
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
 def start(update, context):
     update.message.reply_text("Welcome to the Guess the Number game! I'm thinking of a number between 1 and 100. Start guessing!")
